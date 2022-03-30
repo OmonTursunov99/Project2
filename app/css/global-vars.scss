@@ -1,10 +1,12 @@
 $ff-spartan: 'Spartan', sans-serif;
 $ff-lato: 'Lato', sans-serif;
+$ff-roboto: 'Roboto', sans-serif;
 $dark: #263238;
 $success: #008000;
 $white: #ffffff;
 $hoverSuccess: #389338;
 $lightDark: rgba(38, 50, 56, 0.1);
+$lightSuccess: #E6F2E6;
 $spacer-xs: 16px;
 $spacer-sm: 24px;
 $spacer-md: 32px;
@@ -125,4 +127,23 @@ $transition: 500ms;
     font-style: normal;
     color: $dark;
     transition: $transition;
+}
+@mixin tSpartanBold36 {
+    font-family: $ff-spartan;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    color: $dark;
+    transition: $transition ;
+}
+@mixin tSpartanBold70 {
+    font-family: $ff-spartan;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    color: $dark;
+    span {
+        font-family: $ff-lato;
+        color: $success;
+    }
 }
