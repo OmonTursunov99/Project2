@@ -1,0 +1,211 @@
+@import "global-vars.scss";
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* Universal Classes */
+.container {
+    max-width: 1420px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 40px;
+    &.fluid {
+        max-width: 1620px;
+    }
+}
+.btn {
+    @include tSpartanMedium18;
+    line-height: 21.6px;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    padding: 22px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    &.btn-outline-success {
+        border:1px solid $dark;
+        &:hover {
+            background: $success;
+            border-color: transparent;
+            color: $white;
+        }
+    }
+    &.btn-success {
+        background-color: $success;
+        color: $white;
+        &:hover {
+            background-color: $hoverSuccess;
+        }
+    }
+}
+/* Universal Classes-END */
+.main-header {
+    padding: 60px 0;
+    background-color: $white;
+    .content-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .main-header-logo {
+            & > * {
+                font-family: $ff-lato;
+                font-weight: 500;
+                font-size: 36px;
+                font-style: normal;
+                line-height: 43.2px;
+                color: $dark;
+                text-decoration: none;
+                padding: 20px 153px 20px 0;
+            }
+        }
+        nav {
+            @include ulList;
+            ul {
+                display: flex;
+                align-items: center;
+                li {
+                    a {
+                        @include tLatoRegular18;
+                        line-height: 21.6px;
+                        padding: 22px;
+                        &:hover {
+                            color: $success;
+                        }
+                    }
+                    &:first-child a {
+                        padding-left: 0;
+                    }
+                    &:last-child a {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+        form {
+            & > * {
+                font-family: $ff-lato;
+                padding-bottom: 21px;
+                padding-top: 21px;
+                margin-right: $spacer-xs;
+                &:first-child {
+                    padding-left: 44px;
+                    padding-right: 44px;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+.intro-section {
+    padding: 67px 0 97.75px;
+    .content {
+        h1 {
+            font-family: $ff-spartan;
+            max-width: 923px;
+            width: 100%;
+            font-weight: 700;
+            font-size: 70px;
+            font-style: normal;
+            line-height: 78.4px;
+            text-align: center;
+            margin: 0 auto 69px;
+            color: $dark;
+            span {
+                font-family: $ff-spartan;
+                color: $success;
+            }
+        }
+        p {
+            @include tSpartanRegular18;
+            max-width: 752px;
+            width: 100%;
+            line-height: 32.4px;
+            text-align: center;
+            margin: 0 auto $spacer-lg;
+        }
+        form {
+            max-width: 533px;
+            width: 100%;
+            padding: 6px;
+            background-color: $lightDark;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+            .form-container {
+                .form-control {
+                    display: block;
+                    @include tSpartanMedium18;
+                    line-height: 20.16px;
+                    padding: 5px 19px;
+                    background: none;
+                    outline: none;
+                    border: none;
+                    &::placeholder {
+                        @include tSpartanMedium18;
+                        line-height: 20.16px;
+                    }
+                }
+            }
+        }
+        .content-images {
+            margin-top: 208px;
+            & > * {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 100px;
+                position: relative;
+                transition: $transition;
+                margin-bottom: 10px;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: -10px;
+                    right: 50%;
+                    width: 0;
+                    height: 2px;
+                    background-color: $success;
+                    transition: $transition;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    width: 0;
+                    height: 2px;
+                    background-color: $success;
+                    transition: $transition;
+                }
+                &:hover:before,
+                &:hover:after {
+                    width: 50%;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+.how-work-section {
+
+}
+.future-investment-section {
+
+}
+.why-choose-section {
+
+}
+.customers-section {
+
+}
+.apps-section {
+
+}
+.main-footer {
+
+}
