@@ -1,8 +1,16 @@
 @media (max-width: 1440px) and (min-width: 1161px) {
-  .intro-section .content .content-images > * {
+  .intro-section .content .content-images button {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .intro-section .content .content-images .content-images-sponsors > * {
     margin-right: 60px !important;
   }
-  .intro-section .content .content-images > *:last-child {
+  .intro-section .content .content-images .content-images-sponsors > *:nth-child(-n+1) {
+    display: none !important;
+  }
+  .intro-section .content .content-images .content-images-sponsors > *:last-child {
     margin-right: 0 !important;
   }
 
@@ -59,15 +67,29 @@
   .main-header .content-container .main-header-logo a {
     padding-right: 20px !important;
   }
+  .main-header .content-container form > * {
+    margin-right: 8px !important;
+  }
+  .main-header .content-container form > *:last-child {
+    margin-right: 0 !important;
+  }
   .main-header .content-container form a.btn {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
   }
 
-  .intro-section .content .content-images > * {
+  .intro-section .content .content-images button {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .intro-section .content .content-images .content-images-sponsors > * {
     margin-right: 60px !important;
   }
-  .intro-section .content .content-images > *:last-child {
+  .intro-section .content .content-images .content-images-sponsors > *:nth-child(-n+2) {
+    display: none !important;
+  }
+  .intro-section .content .content-images .content-images-sponsors > *:last-child {
     margin-right: 0 !important;
   }
 
@@ -123,6 +145,10 @@
   .why-choose-section .content-container .content-text h2 {
     font-size: 55px !important;
     line-height: 65px !important;
+  }
+  .why-choose-section .content-container .content-text span {
+    width: 80px !important;
+    height: 80px !important;
   }
   .why-choose-section .content-container .content-text .content-cards-group .content-card .content-card-number {
     margin-right: 24px !important;
@@ -186,10 +212,18 @@
     display: block !important;
   }
 
-  .intro-section .content .content-images > * {
-    margin-right: 24px !important;
+  .intro-section .content .content-images button {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
-  .intro-section .content .content-images > *:last-child {
+  .intro-section .content .content-images .content-images-sponsors > * {
+    margin-right: 50px !important;
+  }
+  .intro-section .content .content-images .content-images-sponsors > *:nth-child(-n+3) {
+    display: none !important;
+  }
+  .intro-section .content .content-images .content-images-sponsors > *:last-child {
     margin-right: 0 !important;
   }
   .intro-section .position-dod {
@@ -286,6 +320,10 @@
   .why-choose-section .content-container .content-text h2 {
     font-size: 55px !important;
     line-height: 65px !important;
+  }
+  .why-choose-section .content-container .content-text span {
+    width: 80px !important;
+    height: 80px !important;
   }
   .why-choose-section .content-container .content-text .content-cards-group {
     display: -webkit-box !important;
@@ -407,17 +445,22 @@
     display: block !important;
   }
 
-  .intro-section .content .content-images > * {
-    margin-right: 12px !important;
+  .intro-section .content .content-images button {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
-  .intro-section .content .content-images > *:last-child {
+  .intro-section .content .content-images .content-images-sponsors > * {
     margin-right: 0 !important;
   }
+  .intro-section .content .content-images .content-images-sponsors > *:nth-child(-n+4) {
+    display: none !important;
+  }
   .intro-section .position-star {
-    top: 65% !important;
+    top: 72% !important;
   }
   .intro-section .position-dod {
-    top: 66% !important;
+    top: 75% !important;
   }
 
   .how-work-section .content-container {
@@ -646,20 +689,25 @@
   .intro-section .content form button {
     padding: 12px !important;
   }
-  .intro-section .content .content-images > * {
-    margin-bottom: 24px !important;
+  .intro-section .content .content-images button {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
-  .intro-section .content .content-images > *:last-child {
-    margin-bottom: 0 !important;
+  .intro-section .content .content-images .content-images-sponsors > * {
+    margin-right: 0 !important;
+  }
+  .intro-section .content .content-images .content-images-sponsors > *:nth-child(-n+4) {
+    display: none !important;
   }
   .intro-section .position-currency {
     left: 2% !important;
   }
   .intro-section .position-star {
-    top: 65% !important;
+    top: 74% !important;
   }
   .intro-section .position-dod {
-    top: 66% !important;
+    top: 75% !important;
   }
 
   .how-work-section {
@@ -690,21 +738,27 @@
     font-size: 38px !important;
     line-height: 48px !important;
   }
+  .how-work-section .content-container .content-text span {
+    width: 80px !important;
+    height: 80px !important;
+  }
   .how-work-section .content-container .content-text .content-cards-group > * {
     width: 100% !important;
   }
   .how-work-section .content-container .content-text .content-cards-group .content-card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .how-work-section .content-container .content-text .content-cards-group .content-card > * {
     margin-right: 0 !important;
   }
   .how-work-section .content-container .content-text .content-cards-group .content-card .content-card-text {
     margin-top: 12px !important;
-    max-width: 310px !important;
+    max-width: 300px !important;
+  }
+  .how-work-section .content-container .content-text .content-cards-group .content-card .content-card-text p {
+    font-size: 16px !important;
   }
 
   .future-investment-section {
@@ -759,6 +813,10 @@
   .why-choose-section .content-container .content-text h2 {
     font-size: 38px !important;
     line-height: 48px !important;
+  }
+  .why-choose-section .content-container .content-text span {
+    width: 80px;
+    height: 80px;
   }
   .why-choose-section .content-container .content-text .content-cards-group .content-card {
     margin-bottom: 24px !important;
@@ -960,12 +1018,22 @@
     margin-top: 12px !important;
     padding: 12px !important;
   }
-  .intro-section .content .content-images > * {
-    margin-bottom: 24px !important;
+  .intro-section .content .content-images button {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .intro-section .content .content-images button.left-icon {
+    left: -25px;
+  }
+  .intro-section .content .content-images button.right-icon {
+    right: -25px;
+  }
+  .intro-section .content .content-images .content-images-sponsors > * {
     margin-right: 0 !important;
   }
-  .intro-section .content .content-images > *:last-child {
-    margin-bottom: 0 !important;
+  .intro-section .content .content-images .content-images-sponsors > *:nth-child(-n+4) {
+    display: none !important;
   }
   .intro-section .position-currency {
     left: 2% !important;
@@ -1007,6 +1075,10 @@
   }
   .how-work-section .content-container .content-text .content-cards-group > * {
     width: 100% !important;
+  }
+  .how-work-section .content-container .content-text .content-cards-group span {
+    width: 80px !important;
+    height: 80px !important;
   }
   .how-work-section .content-container .content-text .content-cards-group .content-card {
     -webkit-box-orient: vertical;
@@ -1087,6 +1159,10 @@
   .why-choose-section .content-container .content-text h2 {
     font-size: 38px !important;
     line-height: 48px !important;
+  }
+  .why-choose-section .content-container .content-text span {
+    width: 80px !important;
+    height: 80px !important;
   }
   .why-choose-section .content-container .content-text .content-cards-group .content-card {
     margin-bottom: 24px !important;
