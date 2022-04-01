@@ -1167,6 +1167,98 @@ main .main-position-item {
   line-height: 15.68px;
 }
 
+.dark-mode {
+  background-color: #263238;
+}
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode strong {
+  color: #ffffff !important;
+}
+.dark-mode form {
+  background-color: #ffffff !important;
+}
+.dark-mode .main-header .content-container .main-header-logo a {
+  color: #ffffff !important;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+.dark-mode .main-header .content-container .main-header-logo a:hover {
+  color: #008000 !important;
+}
+.dark-mode .main-header .content-container form {
+  background: none !important;
+}
+.dark-mode .main-header .content-container form .btn-outline-success {
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+.dark-mode .main-header .content-container form .btn-outline-success:hover {
+  border-color: transparent !important;
+}
+.dark-mode .intro-section .content .content-images .content-images-sponsors a svg path {
+  fill: #93999B !important;
+}
+.dark-mode .how-work-section .content-image {
+  background-color: #313C42 !important;
+}
+.dark-mode .how-work-section .content-image svg path {
+  stroke: #ffffff !important;
+}
+.dark-mode .how-work-section .content-text .content-cards-group .content-card span {
+  background-color: #223A32 !important;
+}
+.dark-mode .future-investment-section .content-container .content-image {
+  background-color: #313C42 !important;
+}
+.dark-mode .future-investment-section .content-container .content-text .content-dropdown-group .content-dropdown {
+  background-color: #313C42 !important;
+}
+.dark-mode .future-investment-section .content-container .content-text .content-dropdown-group .content-dropdown span {
+  color: #ffffff !important;
+}
+.dark-mode .why-choose-section .content-container .content-text .content-cards-group .content-card .content-card-number {
+  background-color: #313C42 !important;
+}
+.dark-mode .why-choose-section .content-container .content-text .content-cards-group .content-card .content-card-number span {
+  color: #ffffff !important;
+}
+.dark-mode .customers-section .content .content-cards-group .content-card {
+  background-color: #313C42 !important;
+}
+.dark-mode .apps-section .content {
+  background-color: #313C42 !important;
+}
+.dark-mode .main-footer {
+  background-color: #313C42 !important;
+}
+.dark-mode .main-footer .content-container .content-text a svg path {
+  fill: #ffffff !important;
+}
+.dark-mode .main-footer .content-container .content-text a svg line {
+  stroke: #ffffff !important;
+}
+.dark-mode .main-footer .content-container .content-links-group .content-link a {
+  color: #ffffff !important;
+}
+.dark-mode .main-footer .content-container .content-links-group .content-link a:hover {
+  color: #008000 !important;
+}
+.dark-mode .main-footer .content-container .content-links-group .content-link nav ul li a {
+  background-color: #ffffff !important;
+}
+.dark-mode .main-footer .content-container .content-links-group .content-link nav ul li a svg path {
+  fill: #008000 !important;
+}
+.dark-mode nav ul li a {
+  color: #ffffff !important;
+}
+.dark-mode nav ul li a:hover {
+  color: #008000 !important;
+}
+
 @media (max-width: 1440px) and (min-width: 1161px) {
   .intro-section .content .content-images button {
     display: -webkit-box !important;

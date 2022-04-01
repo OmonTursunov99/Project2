@@ -765,4 +765,172 @@ main {
         }
     }
 }
+.dark-mode {
+    background-color: $dark;
+    h1,
+    h2,
+    h3,
+    p,
+    strong {
+        color: $white !important;
+    }
+    form {
+        background-color: $white !important;
+    }
+    .main-header {
+        .content-container {
+            .main-header-logo {
+                a {
+                    color: $white !important;
+                    transition: $transition;
+                    &:hover {
+                        color: $success !important;
+                    }
+                }
+            }
+            form {
+                background: none !important;
+                .btn-outline-success {
+                    border-color: $white !important;
+                    color: $white !important;
+                    &:hover {
+                        border-color: transparent !important;
+                    }
+                }
+            }
+        }
+    }
+    .intro-section {
+        .content {
+            .content-images {
+                .content-images-sponsors {
+                    a {
+                        svg {
+                            & path {
+                                fill: $gray !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .how-work-section {
+        .content-image {
+            background-color: $smoke !important;
+            svg path{
+                stroke: #ffffff !important;
+            }
+        }
+        .content-text {
+            .content-cards-group {
+                .content-card {
+                    span {
+                        background-color: $darkSuccess !important;
+                    }
+                }
+            }
+        }
+    }
+    .future-investment-section {
+        .content-container {
+            .content-image {
+                background-color: $smoke !important;
+            }
+            .content-text {
+                .content-dropdown-group {
+                    .content-dropdown {
+                        background-color: $smoke !important;
+                        span {
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .why-choose-section {
+        .content-container {
+            .content-text {
+                .content-cards-group {
+                    .content-card {
+                        .content-card-number {
+                            background-color: $smoke !important;
+                            span {
+                                color: $white !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .customers-section {
+        .content {
+            .content-cards-group {
+                .content-card {
+                    background-color: $smoke !important;
+                }
+            }
+        }
+    }
+    .apps-section {
+        .content {
+            background-color: $smoke !important;
+        }
+    }
+    .main-footer {
+        background-color: $smoke !important;
+        .content-container {
+            .content-text {
+                a {
+                    svg {
+                        & path {
+                            fill: $white !important;
+                        }
+                        & line {
+                            stroke: $white !important;
+                        }
+                    }
+                }
+            }
+            .content-links-group {
+                .content-link {
+                    a {
+                        color: $white !important;
+                        &:hover {
+                            color: $success !important;
+                        }
+                    }
+                    nav {
+                        ul {
+                            li {
+                                a {
+                                    background-color: $white !important;
+                                    svg {
+                                        & path {
+                                            fill: $success !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        ul {
+            li {
+                a {
+                    color: $white !important;
+                    &:hover {
+                        color: $success !important;
+                    }
+                }
+            }
+        }
+    }
+}
 @import "adaptive.scss";
