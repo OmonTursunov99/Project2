@@ -212,10 +212,6 @@
                     font-size: 55px !important;
                     line-height: 65px !important;
                 }
-                span {
-                    width: 80px !important;
-                    height: 80px !important;
-                }
                 .content-cards-group {
                     .content-card {
                         .content-card-number {
@@ -235,13 +231,14 @@
             .content-cards-group {
                 .content-card {
                     img {
-                        width: 30% !important;
+                        width: 40% !important;
                     }
                     .content-card-text {
                         padding: 16px !important;
                         p {
-                            font-size: 16px !important;
+                            font-size: 14px !important;
                             margin-bottom: 12px !important;
+                            line-height: 24px !important;
                         }
                     }
                 }
@@ -407,10 +404,6 @@
                     font-size: 55px !important;
                     line-height: 65px !important;
                 }
-                span {
-                    width: 80px !important;
-                    height: 80px !important;
-                }
                 .content-cards-group {
                     display: flex !important;
                     align-items: center !important;
@@ -444,7 +437,7 @@
                 }
                 .content-card {
                     img {
-                        width: 30% !important;
+                        width: 40% !important;
                     }
                     .content-card-text {
                         padding: 16px !important;
@@ -680,7 +673,7 @@
                 }
                 .content-card {
                     img {
-                        width: 30% !important;
+                        width: 40% !important;
                     }
                     .content-card-text {
                         padding: 16px !important;
@@ -829,19 +822,18 @@
                     font-size: 38px !important;
                     line-height: 48px !important;
                 }
-                span {
-                    width: 80px !important;
-                    height: 80px !important;
-                }
                 .content-cards-group {
                     & > * {
                         width: 100% !important;
                     }
-                    
                     .content-card {
                         justify-content: space-between;
                         & > * {
                             margin-right: 0 !important;
+                        }
+                        .content-box {
+                            width: 80px !important;
+                            height: 80px !important;
                         }
                         .content-card-text {
                             margin-top: 12px !important;
@@ -899,10 +891,6 @@
                 h2 {
                     font-size: 38px !important;
                     line-height: 48px !important;
-                }
-                span {
-                    width: 80px;
-                    height: 80px;
                 }
                 .content-cards-group {
                     .content-card {
@@ -1062,6 +1050,7 @@
             form {
                 flex-direction: column;
                 align-items: flex-start !important;
+                width: 85% !important;
                 .form-container {
                     .form-control {
                         display: block !important;
@@ -1075,6 +1064,7 @@
                 button {
                     margin-top: 12px !important;
                     padding: 12px !important;
+                    font-size: 16px !important;
                 }
             }
             .content-images {
@@ -1107,6 +1097,10 @@
         .position-dod {
             top: 66% !important;
         }
+        .position-star-solid,
+        .position-bag {
+            top: 75% !important;
+        }
     }
     .how-work-section {
         padding: 50px 0 !important;
@@ -1134,7 +1128,7 @@
                     & > * {
                         width: 100% !important;
                     }
-                    span {
+                    .content-box {
                         width: 80px !important;
                         height: 80px !important;
                     }
@@ -1207,19 +1201,14 @@
                     font-size: 38px !important;
                     line-height: 48px !important;
                 }
-                span {
-                    width: 80px !important;
-                    height: 80px !important;
-                }
                 .content-cards-group {
                     .content-card {
                         margin-bottom: 24px !important;
-                        
                         .content-card-number {
                             margin-right: 12px !important;
                         }
-                        p {
-                            font-size: 16px !important;
+                        a {
+                            font-size: 14px !important;
                         }
                     }
                 }
@@ -1283,14 +1272,19 @@
                 margin-bottom: 24px !important;
                 p {
                     max-width: none !important;
+                    font-size: 16px !important;
                 }
             }
             .content-actions {
                 max-width: none !important;
                 margin-bottom: 24px !important;
+                p {
+                    font-size: 16px !important;
+                }
                 form {
                     flex-direction: column;
                     align-items: flex-start !important;
+                    width: 85% !important;
                     .form-container {
                         .form-control {
                             display: block !important;

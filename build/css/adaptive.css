@@ -146,10 +146,6 @@
     font-size: 55px !important;
     line-height: 65px !important;
   }
-  .why-choose-section .content-container .content-text span {
-    width: 80px !important;
-    height: 80px !important;
-  }
   .why-choose-section .content-container .content-text .content-cards-group .content-card .content-card-number {
     margin-right: 24px !important;
   }
@@ -159,14 +155,15 @@
     line-height: 65px !important;
   }
   .customers-section .content .content-cards-group .content-card img {
-    width: 30% !important;
+    width: 40% !important;
   }
   .customers-section .content .content-cards-group .content-card .content-card-text {
     padding: 16px !important;
   }
   .customers-section .content .content-cards-group .content-card .content-card-text p {
-    font-size: 16px !important;
+    font-size: 14px !important;
     margin-bottom: 12px !important;
+    line-height: 24px !important;
   }
 
   .main-footer .content-container {
@@ -321,10 +318,6 @@
     font-size: 55px !important;
     line-height: 65px !important;
   }
-  .why-choose-section .content-container .content-text span {
-    width: 80px !important;
-    height: 80px !important;
-  }
   .why-choose-section .content-container .content-text .content-cards-group {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -360,7 +353,7 @@
     margin-right: 0 !important;
   }
   .customers-section .content .content-cards-group .content-card img {
-    width: 30% !important;
+    width: 40% !important;
   }
   .customers-section .content .content-cards-group .content-card .content-card-text {
     padding: 16px !important;
@@ -595,7 +588,7 @@
     margin-right: 0 !important;
   }
   .customers-section .content .content-cards-group .content-card img {
-    width: 30% !important;
+    width: 40% !important;
   }
   .customers-section .content .content-cards-group .content-card .content-card-text {
     padding: 16px !important;
@@ -738,10 +731,6 @@
     font-size: 38px !important;
     line-height: 48px !important;
   }
-  .how-work-section .content-container .content-text span {
-    width: 80px !important;
-    height: 80px !important;
-  }
   .how-work-section .content-container .content-text .content-cards-group > * {
     width: 100% !important;
   }
@@ -752,6 +741,10 @@
   }
   .how-work-section .content-container .content-text .content-cards-group .content-card > * {
     margin-right: 0 !important;
+  }
+  .how-work-section .content-container .content-text .content-cards-group .content-card .content-box {
+    width: 80px !important;
+    height: 80px !important;
   }
   .how-work-section .content-container .content-text .content-cards-group .content-card .content-card-text {
     margin-top: 12px !important;
@@ -813,10 +806,6 @@
   .why-choose-section .content-container .content-text h2 {
     font-size: 38px !important;
     line-height: 48px !important;
-  }
-  .why-choose-section .content-container .content-text span {
-    width: 80px;
-    height: 80px;
   }
   .why-choose-section .content-container .content-text .content-cards-group .content-card {
     margin-bottom: 24px !important;
@@ -993,6 +982,7 @@
     -webkit-box-align: start !important;
     -ms-flex-align: start !important;
     align-items: flex-start !important;
+    width: 85% !important;
   }
   .intro-section .content form .form-container .form-control {
     display: block !important;
@@ -1017,6 +1007,7 @@
   .intro-section .content form button {
     margin-top: 12px !important;
     padding: 12px !important;
+    font-size: 16px !important;
   }
   .intro-section .content .content-images button {
     display: -webkit-box !important;
@@ -1043,6 +1034,10 @@
   }
   .intro-section .position-dod {
     top: 66% !important;
+  }
+  .intro-section .position-star-solid,
+.intro-section .position-bag {
+    top: 75% !important;
   }
 
   .how-work-section {
@@ -1076,7 +1071,7 @@
   .how-work-section .content-container .content-text .content-cards-group > * {
     width: 100% !important;
   }
-  .how-work-section .content-container .content-text .content-cards-group span {
+  .how-work-section .content-container .content-text .content-cards-group .content-box {
     width: 80px !important;
     height: 80px !important;
   }
@@ -1160,18 +1155,14 @@
     font-size: 38px !important;
     line-height: 48px !important;
   }
-  .why-choose-section .content-container .content-text span {
-    width: 80px !important;
-    height: 80px !important;
-  }
   .why-choose-section .content-container .content-text .content-cards-group .content-card {
     margin-bottom: 24px !important;
   }
   .why-choose-section .content-container .content-text .content-cards-group .content-card .content-card-number {
     margin-right: 12px !important;
   }
-  .why-choose-section .content-container .content-text .content-cards-group .content-card p {
-    font-size: 16px !important;
+  .why-choose-section .content-container .content-text .content-cards-group .content-card a {
+    font-size: 14px !important;
   }
 
   .customers-section {
@@ -1237,10 +1228,14 @@
   }
   .main-footer .content-container .content-text p {
     max-width: none !important;
+    font-size: 16px !important;
   }
   .main-footer .content-container .content-actions {
     max-width: none !important;
     margin-bottom: 24px !important;
+  }
+  .main-footer .content-container .content-actions p {
+    font-size: 16px !important;
   }
   .main-footer .content-container .content-actions form {
     -webkit-box-orient: vertical;
@@ -1250,6 +1245,7 @@
     -webkit-box-align: start !important;
     -ms-flex-align: start !important;
     align-items: flex-start !important;
+    width: 85% !important;
   }
   .main-footer .content-container .content-actions form .form-container .form-control {
     display: block !important;

@@ -242,13 +242,13 @@ main {
                 svg {
                     & path {
                         transition: $transition;
-                        fill: $success
+                        fill: $success !important;
                     }
                 }
                 &:hover {
                     background-color: $success;
                     svg path {
-                        fill: $white
+                        fill: $white !important;
                     }
                 }
             }
@@ -334,7 +334,7 @@ main {
                 .content-card {
                     display: flex;
                     align-items: flex-start;
-                    span {
+                    .content-box {
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -350,10 +350,15 @@ main {
                     }
                     .content-card-text {
                         max-width: 348px;
-                        h3 {
+                        .content-title {
                             @include tSpartanBold20;
                             line-height: 22.4px;
                             margin-bottom: $spacer-xs;
+                            text-decoration: none;
+                            display: block;
+                            &:hover {
+                                color: $success;
+                            }
                         }
                         p {
                             @include tSpartanRegular18;
@@ -503,8 +508,14 @@ main {
                             color: $success;
                         }
                     }
-                    p {
+                    a {
+                        @include tSpartanRegular18;
+                        line-height: 31.86px;
                         margin-bottom: 0;
+                        text-decoration: none;
+                        &:hover {
+                            color: $success;
+                        }
                     }
                 }
             }
@@ -656,10 +667,9 @@ main {
             }
             form {
                 max-width: 533px;
-                width: 100%;
+                width: 95%;
                 padding: 6px;
                 background-color: $lightDark;
-                margin: 0 auto;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -766,6 +776,10 @@ main {
     }
 }
 .dark-mode {
+    z-index: 0;
+    .main-position-item circle {
+        stroke: #ffffff !important;
+    }
     background-color: $dark;
     h1,
     h2,
@@ -805,28 +819,38 @@ main {
             .content-images {
                 .content-images-sponsors {
                     a {
-                        svg {
-                            & path {
-                                fill: $gray !important;
-                            }
+                        svg path{
+                            fill: $gray !important;
                         }
                     }
                 }
             }
         }
+        svg path{
+            fill: $white !important;
+        }
+        svg circle {
+            stroke: $white !important;
+        }
     }
     .how-work-section {
         .content-image {
             background-color: $smoke !important;
-            svg path{
+            svg circle {
                 stroke: #ffffff !important;
             }
         }
         .content-text {
             .content-cards-group {
                 .content-card {
-                    span {
+                    .content-box {
                         background-color: $darkSuccess !important;
+                    }
+                    .content-title {
+                        color: $white !important;
+                        &:hover {
+                            color: $success !important;
+                        }
                     }
                 }
             }
@@ -836,6 +860,9 @@ main {
         .content-container {
             .content-image {
                 background-color: $smoke !important;
+                svg circle {
+                    stroke: #ffffff !important;
+                }
             }
             .content-text {
                 .content-dropdown-group {
@@ -860,6 +887,12 @@ main {
                                 color: $white !important;
                             }
                         }
+                        a {
+                            color: $white !important;
+                            &:hover {
+                                color: $success !important;
+                            }
+                        }
                     }
                 }
             }
@@ -876,7 +909,15 @@ main {
     }
     .apps-section {
         .content {
+            svg circle {
+                stroke: #ffffff !important;
+            }
             background-color: $smoke !important;
+            .content-links-group {
+                & > * {
+                    z-index: 9;
+                }
+            }
         }
     }
     .main-footer {

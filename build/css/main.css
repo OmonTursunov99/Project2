@@ -345,13 +345,13 @@ main .main-position-item {
 .intro-section .content .content-images button svg path {
   -webkit-transition: 500ms;
   transition: 500ms;
-  fill: #008000;
+  fill: #008000 !important;
 }
 .intro-section .content .content-images button:hover {
   background-color: #008000;
 }
 .intro-section .content .content-images button:hover svg path {
-  fill: #ffffff;
+  fill: #ffffff !important;
 }
 .intro-section .content .content-images .left-icon {
   left: -10px;
@@ -466,7 +466,7 @@ main .main-position-item {
   -ms-flex-align: start;
   align-items: flex-start;
 }
-.how-work-section .content-container .content-text .content-cards-group .content-card span {
+.how-work-section .content-container .content-text .content-cards-group .content-card .content-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,14 +482,14 @@ main .main-position-item {
   background-color: #E6F2E6;
   margin-right: 32px;
 }
-.how-work-section .content-container .content-text .content-cards-group .content-card span svg {
+.how-work-section .content-container .content-text .content-cards-group .content-card .content-box svg {
   width: 56px;
   height: 56px;
 }
 .how-work-section .content-container .content-text .content-cards-group .content-card .content-card-text {
   max-width: 348px;
 }
-.how-work-section .content-container .content-text .content-cards-group .content-card .content-card-text h3 {
+.how-work-section .content-container .content-text .content-cards-group .content-card .content-card-text .content-title {
   font-family: "Spartan", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -499,6 +499,11 @@ main .main-position-item {
   transition: 500ms;
   line-height: 22.4px;
   margin-bottom: 16px;
+  text-decoration: none;
+  display: block;
+}
+.how-work-section .content-container .content-text .content-cards-group .content-card .content-card-text .content-title:hover {
+  color: #008000;
 }
 .how-work-section .content-container .content-text .content-cards-group .content-card .content-card-text p {
   font-family: "Spartan", sans-serif;
@@ -730,8 +735,20 @@ main .main-position-item {
   transition: 500ms;
   color: #008000;
 }
-.why-choose-section .content-container .content-text .content-cards-group .content-card p {
+.why-choose-section .content-container .content-text .content-cards-group .content-card a {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  color: #263238;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  line-height: 31.86px;
   margin-bottom: 0;
+  text-decoration: none;
+}
+.why-choose-section .content-container .content-text .content-cards-group .content-card a:hover {
+  color: #008000;
 }
 .why-choose-section .content-container .content-text a.btn {
   padding: 22px 55px;
@@ -943,10 +960,9 @@ main .main-position-item {
 }
 .main-footer .content-container .content-actions form {
   max-width: 533px;
-  width: 100%;
+  width: 95%;
   padding: 6px;
   background-color: rgba(38, 50, 56, 0.1);
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1168,7 +1184,11 @@ main .main-position-item {
 }
 
 .dark-mode {
+  z-index: 0;
   background-color: #263238;
+}
+.dark-mode .main-position-item circle {
+  stroke: #ffffff !important;
 }
 .dark-mode h1,
 .dark-mode h2,
@@ -1201,17 +1221,32 @@ main .main-position-item {
 .dark-mode .intro-section .content .content-images .content-images-sponsors a svg path {
   fill: #93999B !important;
 }
+.dark-mode .intro-section svg path {
+  fill: #ffffff !important;
+}
+.dark-mode .intro-section svg circle {
+  stroke: #ffffff !important;
+}
 .dark-mode .how-work-section .content-image {
   background-color: #313C42 !important;
 }
-.dark-mode .how-work-section .content-image svg path {
+.dark-mode .how-work-section .content-image svg circle {
   stroke: #ffffff !important;
 }
-.dark-mode .how-work-section .content-text .content-cards-group .content-card span {
+.dark-mode .how-work-section .content-text .content-cards-group .content-card .content-box {
   background-color: #223A32 !important;
+}
+.dark-mode .how-work-section .content-text .content-cards-group .content-card .content-title {
+  color: #ffffff !important;
+}
+.dark-mode .how-work-section .content-text .content-cards-group .content-card .content-title:hover {
+  color: #008000 !important;
 }
 .dark-mode .future-investment-section .content-container .content-image {
   background-color: #313C42 !important;
+}
+.dark-mode .future-investment-section .content-container .content-image svg circle {
+  stroke: #ffffff !important;
 }
 .dark-mode .future-investment-section .content-container .content-text .content-dropdown-group .content-dropdown {
   background-color: #313C42 !important;
@@ -1225,11 +1260,23 @@ main .main-position-item {
 .dark-mode .why-choose-section .content-container .content-text .content-cards-group .content-card .content-card-number span {
   color: #ffffff !important;
 }
+.dark-mode .why-choose-section .content-container .content-text .content-cards-group .content-card a {
+  color: #ffffff !important;
+}
+.dark-mode .why-choose-section .content-container .content-text .content-cards-group .content-card a:hover {
+  color: #008000 !important;
+}
 .dark-mode .customers-section .content .content-cards-group .content-card {
   background-color: #313C42 !important;
 }
 .dark-mode .apps-section .content {
   background-color: #313C42 !important;
+}
+.dark-mode .apps-section .content svg circle {
+  stroke: #ffffff !important;
+}
+.dark-mode .apps-section .content .content-links-group > * {
+  z-index: 9;
 }
 .dark-mode .main-footer {
   background-color: #313C42 !important;
@@ -1407,10 +1454,6 @@ main .main-position-item {
     font-size: 55px !important;
     line-height: 65px !important;
   }
-  .why-choose-section .content-container .content-text span {
-    width: 80px !important;
-    height: 80px !important;
-  }
   .why-choose-section .content-container .content-text .content-cards-group .content-card .content-card-number {
     margin-right: 24px !important;
   }
@@ -1420,14 +1463,15 @@ main .main-position-item {
     line-height: 65px !important;
   }
   .customers-section .content .content-cards-group .content-card img {
-    width: 30% !important;
+    width: 40% !important;
   }
   .customers-section .content .content-cards-group .content-card .content-card-text {
     padding: 16px !important;
   }
   .customers-section .content .content-cards-group .content-card .content-card-text p {
-    font-size: 16px !important;
+    font-size: 14px !important;
     margin-bottom: 12px !important;
+    line-height: 24px !important;
   }
 
   .main-footer .content-container {
@@ -1582,10 +1626,6 @@ main .main-position-item {
     font-size: 55px !important;
     line-height: 65px !important;
   }
-  .why-choose-section .content-container .content-text span {
-    width: 80px !important;
-    height: 80px !important;
-  }
   .why-choose-section .content-container .content-text .content-cards-group {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -1621,7 +1661,7 @@ main .main-position-item {
     margin-right: 0 !important;
   }
   .customers-section .content .content-cards-group .content-card img {
-    width: 30% !important;
+    width: 40% !important;
   }
   .customers-section .content .content-cards-group .content-card .content-card-text {
     padding: 16px !important;
@@ -1856,7 +1896,7 @@ main .main-position-item {
     margin-right: 0 !important;
   }
   .customers-section .content .content-cards-group .content-card img {
-    width: 30% !important;
+    width: 40% !important;
   }
   .customers-section .content .content-cards-group .content-card .content-card-text {
     padding: 16px !important;
@@ -1999,10 +2039,6 @@ main .main-position-item {
     font-size: 38px !important;
     line-height: 48px !important;
   }
-  .how-work-section .content-container .content-text span {
-    width: 80px !important;
-    height: 80px !important;
-  }
   .how-work-section .content-container .content-text .content-cards-group > * {
     width: 100% !important;
   }
@@ -2013,6 +2049,10 @@ main .main-position-item {
   }
   .how-work-section .content-container .content-text .content-cards-group .content-card > * {
     margin-right: 0 !important;
+  }
+  .how-work-section .content-container .content-text .content-cards-group .content-card .content-box {
+    width: 80px !important;
+    height: 80px !important;
   }
   .how-work-section .content-container .content-text .content-cards-group .content-card .content-card-text {
     margin-top: 12px !important;
@@ -2074,10 +2114,6 @@ main .main-position-item {
   .why-choose-section .content-container .content-text h2 {
     font-size: 38px !important;
     line-height: 48px !important;
-  }
-  .why-choose-section .content-container .content-text span {
-    width: 80px;
-    height: 80px;
   }
   .why-choose-section .content-container .content-text .content-cards-group .content-card {
     margin-bottom: 24px !important;
@@ -2254,6 +2290,7 @@ main .main-position-item {
     -webkit-box-align: start !important;
     -ms-flex-align: start !important;
     align-items: flex-start !important;
+    width: 85% !important;
   }
   .intro-section .content form .form-container .form-control {
     display: block !important;
@@ -2278,6 +2315,7 @@ main .main-position-item {
   .intro-section .content form button {
     margin-top: 12px !important;
     padding: 12px !important;
+    font-size: 16px !important;
   }
   .intro-section .content .content-images button {
     display: -webkit-box !important;
@@ -2304,6 +2342,10 @@ main .main-position-item {
   }
   .intro-section .position-dod {
     top: 66% !important;
+  }
+  .intro-section .position-star-solid,
+.intro-section .position-bag {
+    top: 75% !important;
   }
 
   .how-work-section {
@@ -2337,7 +2379,7 @@ main .main-position-item {
   .how-work-section .content-container .content-text .content-cards-group > * {
     width: 100% !important;
   }
-  .how-work-section .content-container .content-text .content-cards-group span {
+  .how-work-section .content-container .content-text .content-cards-group .content-box {
     width: 80px !important;
     height: 80px !important;
   }
@@ -2421,18 +2463,14 @@ main .main-position-item {
     font-size: 38px !important;
     line-height: 48px !important;
   }
-  .why-choose-section .content-container .content-text span {
-    width: 80px !important;
-    height: 80px !important;
-  }
   .why-choose-section .content-container .content-text .content-cards-group .content-card {
     margin-bottom: 24px !important;
   }
   .why-choose-section .content-container .content-text .content-cards-group .content-card .content-card-number {
     margin-right: 12px !important;
   }
-  .why-choose-section .content-container .content-text .content-cards-group .content-card p {
-    font-size: 16px !important;
+  .why-choose-section .content-container .content-text .content-cards-group .content-card a {
+    font-size: 14px !important;
   }
 
   .customers-section {
@@ -2498,10 +2536,14 @@ main .main-position-item {
   }
   .main-footer .content-container .content-text p {
     max-width: none !important;
+    font-size: 16px !important;
   }
   .main-footer .content-container .content-actions {
     max-width: none !important;
     margin-bottom: 24px !important;
+  }
+  .main-footer .content-container .content-actions p {
+    font-size: 16px !important;
   }
   .main-footer .content-container .content-actions form {
     -webkit-box-orient: vertical;
@@ -2511,6 +2553,7 @@ main .main-position-item {
     -webkit-box-align: start !important;
     -ms-flex-align: start !important;
     align-items: flex-start !important;
+    width: 85% !important;
   }
   .main-footer .content-container .content-actions form .form-container .form-control {
     display: block !important;
