@@ -150,6 +150,8 @@
     .how-work-section {
         .content-container {
             .content-image {
+                padding-top: 20px !important;
+                align-items: flex-start !important;
                 img {
                     width: 90% !important;
                 }
@@ -182,6 +184,8 @@
                 margin-right: 0 !important;
             }
             .content-image {
+                padding-top: 20px !important;
+                align-items: flex-start !important;
                 margin-right: 24px !important;
                 img {
                     width: 90% !important;
@@ -266,6 +270,18 @@
             }
             .content-actions {
                 max-width: 335px !important;
+                form {
+                    .form-container {
+                        .form-control {
+                            padding-left: 5px !important;
+                            padding-right: 5px !important;
+                            width: 150px !important;
+                            &::placeholder {
+                                font-size: 17px !important;
+                            }
+                        }
+                    }
+                }
             }
             .content-links-group {
                 & > * {
@@ -482,6 +498,9 @@
                 form {
                     .form-container {
                         .form-control {
+                            padding-left: 5px !important;
+                            padding-right: 5px !important;
+                            width: 150px !important;
                             &::placeholder {
                                 font-size: 16px !important;
                             }
@@ -874,6 +893,7 @@
                     .content-dropdown {
                         span {
                             font-size: 14px !important;
+                            line-height: 20px !important;
                         }
                     }
                 }
@@ -936,6 +956,8 @@
     .apps-section {
         padding: 50px 0 !important;
         .content {
+            padding-right: 20px !important;
+            padding-left: 20px !important;
             h2 {
                 font-size: 32px !important;
                 line-height: 42px !important;
@@ -1008,9 +1030,6 @@
                     flex-wrap: wrap;
                     li {
                         margin-bottom: 12px !important;
-                        &:last-child {
-                            margin-bottom: 0 !important;
-                        }
                     }
                 }
             }
@@ -1092,7 +1111,7 @@
             left: 2% !important;
         }
         .position-star {
-            top: 65% !important;
+            top: 56% !important;
         }
         .position-dod {
             top: 66% !important;
@@ -1175,14 +1194,16 @@
                         position: relative;
                         span {
                             font-size: 14px !important;
+                            line-height: 20px !important;
                         }
                         svg {
-                            position: absolute;
-                            top: 50%;
-                            right: 5%;
-                            transform: translateY(-50%);
-                            width: 24px !important;
-                            height: 24px !important;
+                        
+                        }
+                        &:last-child {
+                            span {
+                                max-width: 155px !important;
+                                text-align: start !important;
+                            }
                         }
                     }
                 }

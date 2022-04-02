@@ -18,7 +18,6 @@
 }
 .btn {
     @include tSpartanMedium18;
-    line-height: 21.6px;
     border: none;
     border-radius: 10px;
     background: none;
@@ -456,6 +455,7 @@ main {
                     span {
                         @include tSpartanRegular24;
                         line-height: 42.48px;
+                        text-align: start;
                     }
                 }
             }

@@ -93,6 +93,12 @@
     margin-right: 0 !important;
   }
 
+  .how-work-section .content-container .content-image {
+    padding-top: 20px !important;
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+  }
   .how-work-section .content-container .content-image img {
     width: 90% !important;
   }
@@ -122,6 +128,10 @@
     margin-right: 0 !important;
   }
   .future-investment-section .content-container .content-image {
+    padding-top: 20px !important;
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
     margin-right: 24px !important;
   }
   .future-investment-section .content-container .content-image img {
@@ -188,6 +198,26 @@
   }
   .main-footer .content-container .content-actions {
     max-width: 335px !important;
+  }
+  .main-footer .content-container .content-actions form .form-container .form-control {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    width: 150px !important;
+  }
+  .main-footer .content-container .content-actions form .form-container .form-control::-webkit-input-placeholder {
+    font-size: 17px !important;
+  }
+  .main-footer .content-container .content-actions form .form-container .form-control::-moz-placeholder {
+    font-size: 17px !important;
+  }
+  .main-footer .content-container .content-actions form .form-container .form-control:-ms-input-placeholder {
+    font-size: 17px !important;
+  }
+  .main-footer .content-container .content-actions form .form-container .form-control::-ms-input-placeholder {
+    font-size: 17px !important;
+  }
+  .main-footer .content-container .content-actions form .form-container .form-control::placeholder {
+    font-size: 17px !important;
   }
   .main-footer .content-container .content-links-group > * {
     margin-right: 0 !important;
@@ -390,6 +420,11 @@
   }
   .main-footer .content-container .content-actions {
     max-width: 335px !important;
+  }
+  .main-footer .content-container .content-actions form .form-container .form-control {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    width: 150px !important;
   }
   .main-footer .content-container .content-actions form .form-container .form-control::-webkit-input-placeholder {
     font-size: 16px !important;
@@ -787,6 +822,7 @@
   }
   .future-investment-section .content-container .content-text .content-dropdown-group .content-dropdown span {
     font-size: 14px !important;
+    line-height: 20px !important;
   }
 
   .why-choose-section {
@@ -846,6 +882,10 @@
 
   .apps-section {
     padding: 50px 0 !important;
+  }
+  .apps-section .content {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
   }
   .apps-section .content h2 {
     font-size: 32px !important;
@@ -947,9 +987,6 @@
   .main-footer .content-author nav ul li {
     margin-bottom: 12px !important;
   }
-  .main-footer .content-author nav ul li:last-child {
-    margin-bottom: 0 !important;
-  }
 }
 @media (max-width: 379px) and (min-width: 320px) {
   main .main-position-item {
@@ -1030,7 +1067,7 @@
     left: 2% !important;
   }
   .intro-section .position-star {
-    top: 65% !important;
+    top: 56% !important;
   }
   .intro-section .position-dod {
     top: 66% !important;
@@ -1126,15 +1163,11 @@
   }
   .future-investment-section .content-container .content-text .content-dropdown-group .content-dropdown span {
     font-size: 14px !important;
+    line-height: 20px !important;
   }
-  .future-investment-section .content-container .content-text .content-dropdown-group .content-dropdown svg {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 24px !important;
-    height: 24px !important;
+  .future-investment-section .content-container .content-text .content-dropdown-group .content-dropdown:last-child span {
+    max-width: 155px !important;
+    text-align: start !important;
   }
 
   .why-choose-section {
