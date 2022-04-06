@@ -15,6 +15,16 @@ $spacer-sm: 24px;
 $spacer-md: 32px;
 $spacer-lg: 48px;
 $transition: 500ms;
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: $lightSuccess;
+}
+::-webkit-scrollbar-thumb {
+    background: $success;
+}
 @mixin ulList {
     ul {
         margin: 0;
@@ -148,5 +158,14 @@ $transition: 500ms;
     span {
         font-family: $ff-lato;
         color: $success;
+    }
+}
+
+@keyframes kspinner {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

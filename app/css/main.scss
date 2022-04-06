@@ -52,13 +52,95 @@ main {
         z-index: -1;
     }
 }
+.main-spinner {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+        width: 150px;
+        height: 150px;
+        display: block;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        border-top-color: $success;
+        border-bottom-color: $success;
+        animation: kspinner 1s infinite ease;
+    }
+    &.dark {
+        background-color: $dark;
+        span {
+            border-top-color: $lightSuccess;
+            border-bottom-color: $lightSuccess;
+        }
+    }
+}
+.button-dark-mode {
+    label {
+        width: 60px;
+        height: 28px;
+        position: relative;
+        border-radius: 20px;
+        display: block;
+        cursor: pointer;
+        border: 1px solid $dark;
+        margin-left: 40px;
+        input {
+            opacity: 0;
+            z-index: -9;
+        }
+        .dod {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 50%;
+            left: 2px;
+            transform: translateY(-50%);
+            background-color: $success;
+            border-radius: 50%;
+            transition: 500ms;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg path {
+                fill: $white
+            }
+            .moon-svg {
+                display: none;
+            }
+            .sum-svg {
+                display: block;
+            }
+            
+        }
+        &.active {
+            border-color: $white;
+            .dod {
+                left: 33px;
+                .moon-svg {
+                    display: block;
+                }
+                .sum-svg {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
 .main-header {
     padding: 60px 0;
     .content-container {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         .main-header-logo {
             & > * {
                 font-family: $ff-lato;
@@ -72,7 +154,10 @@ main {
             }
         }
         nav {
+            margin-left: auto;
             @include ulList;
+            display: flex;
+            align-items: center;
             ul {
                 display: flex;
                 align-items: center;
@@ -95,6 +180,7 @@ main {
             }
         }
         form {
+            margin-left: auto;
             & > * {
                 font-family: $ff-lato;
                 padding-bottom: 21px;
@@ -110,6 +196,7 @@ main {
             }
         }
         .mobile-logo {
+            margin-left: auto;
             display: none;
         }
     }
@@ -458,6 +545,45 @@ main {
                         text-align: start;
                     }
                 }
+                .dropdown {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    .dropdown-items {
+                        position: absolute;
+                        top: 110%;
+                        left: 0;
+                        background-color: $white;
+                        width: 100%;
+                        height: auto;
+                        border: 1px solid $lightSuccess;
+                        border-radius: 20px;
+                        z-index: -9;
+                        opacity: 0;
+                        transition: $transition;
+                        &.active {
+                            z-index: 99;
+                            opacity: 1;
+                        }
+                        .dropdown-item {
+                            @include tSpartanRegular24;
+                            font-size: 24px;
+                            line-height: 42.48px;
+                            text-align: start;
+                            margin-bottom: 0;
+                            border: none;
+                            background: none;
+                            cursor: pointer;
+                            padding: 24px 30px;
+                            text-align: start;
+                            border-radius: 20px;
+                            width: 100%;
+                            &:hover {
+                                background-color: $lightSuccess;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -593,11 +719,13 @@ main {
         border-radius: 20px;
         position: relative;
         overflow: hidden;
+        z-index: 0;
         .position-item {
             position: absolute;
             top: 0;
             left: 50%;
             transform: translateX(-50%);
+            z-index: -1;
         }
         h2 {
             @include tSpartanBold70;
@@ -872,6 +1000,15 @@ main {
                             color: $white !important;
                         }
                     }
+                    .dropdown {
+                        .dropdown-items {
+                            .dropdown-item {
+                                &:hover {
+                                    background-color: $lightDark;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -974,4 +1111,3 @@ main {
         }
     }
 }
-@import "adaptive.scss";
