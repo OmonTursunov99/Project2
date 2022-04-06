@@ -81,6 +81,101 @@ main {
         }
     }
 }
+.main-header-navbar {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -99;
+    opacity: 0;
+    background-color: transparent;
+    transition: $transition;
+    .content-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .banner-left {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            //top: 0;
+            //left: 0;
+            width: 50%;
+            height: 50%;
+            background-color: $lightSuccess;
+            transition: $transition;
+            z-index: -1;
+        }
+        .banner-right {
+            position: absolute;
+            bottom: -50%;
+            right: -50%;
+            //bottom: 0;
+            //right: 0;
+            width: 50%;
+            height: 50%;
+            background-color: $lightSuccess;
+            transition: $transition;
+            z-index: -1;
+        }
+        .banner-top {
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            //top: 0;
+            //right: 0;
+            width: 50%;
+            height: 50%;
+            background-color: $lightSuccess;
+            transition: $transition;
+            z-index: -1;
+        }
+        .banner-bottom {
+            position: absolute;
+            bottom: -50%;
+            left: -50%;
+            //bottom: 0;
+            //left: 0;
+            width: 50%;
+            height: 50%;
+            background-color: $lightSuccess;
+            transition: $transition;
+            z-index: -1;
+        }
+        .content {
+            width: 500px;
+            height: 600px;
+            z-index: 99999;
+            background-color: rebeccapurple;
+        }
+    }
+    &.active {
+        z-index: 99;
+        opacity: 1;
+        .content-container {
+            .banner-left {
+                top: 0;
+                left: 0;
+            }
+            .banner-right {
+                bottom: 0;
+                right: 0;
+            }
+            .banner-top {
+                top: 0;
+                right: 0;
+            }
+            .banner-bottom {
+                bottom: 0;
+                left: 0;
+            }
+            .content {
+            
+            }
+        }
+    }
+}
 .button-dark-mode {
     label {
         width: 60px;
@@ -90,7 +185,7 @@ main {
         display: block;
         cursor: pointer;
         border: 1px solid $dark;
-        margin-left: 40px;
+        margin-left: 22px;
         input {
             opacity: 0;
             z-index: -9;
@@ -134,7 +229,6 @@ main {
     }
 }
 
-
 .main-header {
     padding: 60px 0;
     .content-container {
@@ -173,9 +267,6 @@ main {
                     &:first-child a {
                         padding-left: 0;
                     }
-                    &:last-child a {
-                        padding-right: 0;
-                    }
                 }
             }
         }
@@ -198,6 +289,24 @@ main {
         .mobile-logo {
             margin-left: auto;
             display: none;
+            button {
+                border: 2px solid transparent;
+                border-radius: 4px;
+                background: none;
+                transition: $transition;
+                cursor: pointer;
+                padding: 0 5px;
+                &:hover {
+                    border-color: $success;
+                }
+                &:active {
+                    border-color: $success;
+                    background-color: $success;
+                    svg path {
+                        fill: $white
+                    }
+                }
+            }
         }
     }
 }
@@ -530,10 +639,9 @@ main {
                     }
                 }
                 .content-dropdown {
-                    background-color: $lightSuccess;
-                    border-radius: 10px;
-                    padding: 24px 30px;
+                    background: none;
                     display: flex;
+                    padding: 24px 0;
                     align-items: center;
                     justify-content: space-between;
                     width: 100%;
@@ -544,42 +652,30 @@ main {
                         line-height: 42.48px;
                         text-align: start;
                     }
+                    svg {
+                        transition: $transition;
+                    }
+                    &.active {
+                        svg {
+                            transform: rotate(180deg);
+                        }
+                    }
                 }
                 .dropdown {
-                    width: 100%;
                     height: 100%;
-                    position: relative;
-                    .dropdown-items {
-                        position: absolute;
-                        top: 110%;
-                        left: 0;
-                        background-color: $white;
-                        width: 100%;
-                        height: auto;
-                        border: 1px solid $lightSuccess;
-                        border-radius: 20px;
-                        z-index: -9;
-                        opacity: 0;
-                        transition: $transition;
-                        &.active {
-                            z-index: 99;
-                            opacity: 1;
-                        }
-                        .dropdown-item {
-                            @include tSpartanRegular24;
-                            font-size: 24px;
-                            line-height: 42.48px;
-                            text-align: start;
+                    transition: $transition;
+                    background-color: $lightSuccess;
+                    border-radius: 10px;
+                    padding:0 30px;
+                    .dropdown-text {
+                        p {
+                            padding: 15px 0;
                             margin-bottom: 0;
-                            border: none;
-                            background: none;
-                            cursor: pointer;
-                            padding: 24px 30px;
-                            text-align: start;
-                            border-radius: 20px;
-                            width: 100%;
-                            &:hover {
-                                background-color: $lightSuccess;
+                            display: none;
+                        }
+                        &.active {
+                            p {
+                                display: block;
                             }
                         }
                     }
@@ -659,6 +755,12 @@ main {
 .customers-section {
     padding: 100px 0;
     .content {
+        .content-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
         h2 {
             @include tSpartanBold70;
             line-height: 78.4px;
@@ -701,6 +803,17 @@ main {
                         line-height: 31.86px;
                         margin-top: auto;
                     }
+                }
+            }
+            &.other-customers {
+                position: absolute;
+                z-index: -999;
+                opacity: 0;
+                transition: $transition;
+                &.active {
+                    position: revert;
+                    z-index: 0;
+                    opacity: 1;
                 }
             }
         }

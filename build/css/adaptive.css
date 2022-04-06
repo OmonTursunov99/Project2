@@ -180,6 +180,9 @@
   .future-investment-section .content-container .content-text .content-dropdown-group .content-dropdown span {
     font-size: 16px;
   }
+  .future-investment-section .content-container .content-text .content-dropdown-group .dropdown-text p {
+    font-size: 16px;
+  }
 
   .why-choose-section .content-container .content-text {
     margin-right: 24px;
@@ -361,9 +364,8 @@
   .future-investment-section .content-container .content-text .content-dropdown-group .content-dropdown span {
     font-size: 16px;
   }
-  .future-investment-section .content-container .content-text .content-dropdown-group .dropdown .media .dropdown-item {
+  .future-investment-section .content-container .content-text .content-dropdown-group .dropdown-text p {
     font-size: 16px;
-    line-height: 24px;
   }
 
   .why-choose-section .content-container {
@@ -598,9 +600,8 @@
   .future-investment-section .content-container .content-text .content-dropdown-group .content-dropdown span {
     font-size: 16px;
   }
-  .future-investment-section .content-container .content-text .content-dropdown-group .dropdown .media .dropdown-item {
+  .future-investment-section .content-container .content-text .content-dropdown-group .dropdown-text p {
     font-size: 16px;
-    line-height: 24px;
   }
 
   .why-choose-section .content-container {
@@ -857,7 +858,7 @@
     font-size: 14px;
     line-height: 20px;
   }
-  .future-investment-section .content-container .content-text .content-dropdown-group .dropdown .media .dropdown-item {
+  .future-investment-section .content-container .content-text .content-dropdown-group .dropdown-text p {
     font-size: 14px;
     line-height: 20px;
   }
@@ -1208,7 +1209,7 @@
     max-width: 155px;
     text-align: start;
   }
-  .future-investment-section .content-container .content-text .content-dropdown-group .dropdown .media .dropdown-item {
+  .future-investment-section .content-container .content-text .content-dropdown-group .dropdown-text p {
     font-size: 14px;
     line-height: 20px;
   }

@@ -25,9 +25,11 @@
                     </ul>
                 </nav>
                 <div class="mobile-logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#008000" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                    </svg>
+                    <button id="mobileButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#008000" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
                 </div>
                 <div class="button-dark-mode">
                     <label>
@@ -47,7 +49,6 @@
                     <a class="btn btn-outline-success" href="#">Sign In</a>
                     <a class="btn btn-success" href="#">Get Started</a>
                 </form>
-
             </div>
         </div>
     </header>
@@ -288,9 +289,8 @@
                                     <path d="M19.92 8.95001L13.4 15.47C12.63 16.24 11.37 16.24 10.6 15.47L4.07999 8.95001" stroke="#23B123" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </button>
-                            <div class="dropdown-items media">
-                                <button class="dropdown-item button-dropdown-item" type="button"> Lorem ipsum dolor sit amet.</button>
-                                <button class="dropdown-item button-dropdown-item" type="button">Lorem ipsum dolor sit amet.</button>
+                            <div class="dropdown-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dignissimos!</p>
                             </div>
                         </div>
                         <div class="dropdown">
@@ -300,9 +300,8 @@
                                     <path d="M19.92 8.95001L13.4 15.47C12.63 16.24 11.37 16.24 10.6 15.47L4.07999 8.95001" stroke="#23B123" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </button>
-                            <div class="dropdown-items media">
-                                <button class="dropdown-item button-dropdown-item" type="button"> Lorem ipsum dolor sit amet.</button>
-                                <button class="dropdown-item button-dropdown-item" type="button">Lorem ipsum dolor sit amet.</button>
+                            <div class="dropdown-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, temporibus?</p>
                             </div>
                         </div>
                         <div class="dropdown">
@@ -312,9 +311,8 @@
                                     <path d="M19.92 8.95001L13.4 15.47C12.63 16.24 11.37 16.24 10.6 15.47L4.07999 8.95001" stroke="#23B123" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </button>
-                            <div class="dropdown-items media">
-                                <button class="dropdown-item button-dropdown-item" type="button"> Lorem ipsum dolor sit amet.</button>
-                                <button class="dropdown-item button-dropdown-item" type="button">Lorem ipsum dolor sit amet.</button>
+                            <div class="dropdown-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, temporibus?</p>
                             </div>
                         </div>
                     </div>
@@ -383,7 +381,25 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-success" href="#">View All</a>
+                <div class="content-cards-group other-customers" id="otherCustomers">
+                    <div class="content-card">
+                        <img src="./img/users/user-4.png" alt="" />
+                        <div class="content-card-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac</p>
+                            <strong>Tonia Smart</strong>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="./img/users/user-5.png" alt="" />
+                        <div class="content-card-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac</p>
+                            <strong>Grace Obi</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-container">
+                    <button type="button" class="btn btn-success" id="viewCustomers">View All</button>
+                </div>
             </div>
         </div>
     </section>
@@ -516,8 +532,17 @@
     <svg class="main-position-item" width="469" height="324" viewBox="0 0 469 324" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="176.5" cy="31.5" r="292" stroke="#008000"/>
     </svg>
-    <div class="main-spinner">
-        <span></span>
+    <div class="main-spinner"><span></span></div>
+    <div class="main-header-navbar">
+        <div class="content-container">
+            <div class="banner-left"></div>
+            <div class="banner-right"></div>
+            <div class="banner-top"></div>
+            <div class="banner-bottom"></div>
+            <div class="content">
+                <p>FarmVest</p>
+            </div>
+        </div>
     </div>
 </main>
 <script src="./js/app.js"></script>

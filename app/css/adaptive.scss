@@ -204,6 +204,11 @@
                             font-size: 16px ;
                         }
                     }
+                    .dropdown-text {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
                 }
             }
         }
@@ -406,12 +411,9 @@
                             font-size: 16px ;
                         }
                     }
-                    .dropdown {
-                        .media {
-                            .dropdown-item {
-                                font-size: 16px;
-                                line-height: 24px;
-                            }
+                    .dropdown-text {
+                        p {
+                            font-size: 16px;
                         }
                     }
                 }
@@ -648,12 +650,9 @@
                             font-size: 16px ;
                         }
                     }
-                    .dropdown {
-                        .media {
-                            .dropdown-item {
-                                font-size: 16px;
-                                line-height: 24px;
-                            }
+                    .dropdown-text {
+                        p {
+                            font-size: 16px;
                         }
                     }
                 }
@@ -912,12 +911,11 @@
                             line-height: 20px ;
                         }
                     }
-                    .dropdown {
-                        .media {
-                            .dropdown-item {
-                                font-size: 14px;
-                                line-height: 20px;
-                            }
+                    .dropdown-text {
+                        p {
+                            font-size: 14px;
+                            line-height: 20px;
+    
                         }
                     }
                 }
@@ -1232,12 +1230,10 @@
                             }
                         }
                     }
-                    .dropdown {
-                        .media {
-                            .dropdown-item {
-                                font-size: 14px;
-                                line-height: 20px;
-                            }
+                    .dropdown-text {
+                        p {
+                            font-size: 14px;
+                            line-height: 20px;
                         }
                     }
                 }

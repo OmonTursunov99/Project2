@@ -3,6 +3,10 @@ let dropdownItemsGroup = document.querySelectorAll('.button-dropdown-item');
 let inputDarkMode = document.querySelector('#inputDarkMode');
 let mainTag = document.querySelector('#main');
 let mainSpinner = document.querySelector('.main-spinner');
+let otherCustomers = document.querySelector('#otherCustomers');
+let viewCustomers = document.querySelector('#viewCustomers');
+let mainHeaderNavbar = document.querySelector('.main-header-navbar');
+let mobileButton = document.querySelector('#mobileButton');
 
 let spinnerStop = () => {
     mainSpinner.style.display = 'flex';
@@ -12,10 +16,8 @@ let spinnerStop = () => {
 }
 buttonsGroup.forEach(item => {
     item.onclick = function () {
-        if(!item.nextElementSibling.classList.contains('active')) {
-            buttonsGroup.forEach(el => {el.nextElementSibling.classList.remove('active')});
-        }
         item.nextElementSibling.classList.toggle('active');
+        item.classList.toggle('active');
     };
 });
 dropdownItemsGroup.forEach(item => {
@@ -37,3 +39,9 @@ inputDarkMode.onclick = function () {
 
     }
 };
+viewCustomers.onclick = function () {
+    otherCustomers.classList.toggle('active')
+}
+mobileButton.onclick = function () {
+    mainHeaderNavbar.classList.toggle('active')
+}
