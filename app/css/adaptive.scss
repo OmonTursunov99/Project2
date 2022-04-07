@@ -769,6 +769,16 @@
             }
         }
     }
+    .swiper {
+        .slider-container {
+            a {
+                svg {
+                    width: 150px;
+                    height: 60px;
+                }
+            }
+        }
+    }
 }
 
 @media(max-width: 539px) and (min-width: 380px) {
@@ -1058,6 +1068,16 @@
             }
         }
     }
+    .swiper {
+        .slider-container {
+            a {
+                svg {
+                    width: 150px;
+                    height: 60px;
+                }
+            }
+        }
+    }
 }
 
 @media(max-width: 379px) and (min-width: 320px) {
@@ -1136,7 +1156,8 @@
             left: 2% ;
         }
         .position-star {
-            top: 56% ;
+            top: 34% ;
+            opacity: 0;
         }
         .position-dod {
             top: 66% ;
@@ -1379,6 +1400,16 @@
                             margin-bottom: 0 ;
                         }
                     }
+                }
+            }
+        }
+    }
+    .swiper {
+        .slider-container {
+            a {
+                svg {
+                    width: 150px;
+                    height: 60px;
                 }
             }
         }

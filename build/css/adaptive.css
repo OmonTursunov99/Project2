@@ -721,6 +721,11 @@
   .main-footer .content-author p {
     margin-bottom: 12px;
   }
+
+  .swiper .slider-container a svg {
+    width: 150px;
+    height: 60px;
+  }
 }
 @media (max-width: 539px) and (min-width: 380px) {
   main .main-position-item {
@@ -1026,6 +1031,11 @@
   .main-footer .content-author nav ul li {
     margin-bottom: 12px;
   }
+
+  .swiper .slider-container a svg {
+    width: 150px;
+    height: 60px;
+  }
 }
 @media (max-width: 379px) and (min-width: 320px) {
   main .main-position-item {
@@ -1108,7 +1118,8 @@
     left: 2%;
   }
   .intro-section .position-star {
-    top: 56%;
+    top: 34%;
+    opacity: 0;
   }
   .intro-section .position-dod {
     top: 66%;
@@ -1381,5 +1392,10 @@
   }
   .main-footer .content-author nav ul li:last-child {
     margin-bottom: 0;
+  }
+
+  .swiper .slider-container a svg {
+    width: 150px;
+    height: 60px;
   }
 }
