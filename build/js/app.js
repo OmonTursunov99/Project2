@@ -6,7 +6,7 @@ let mainSpinner = document.querySelector('.main-spinner');
 let otherCustomers = document.querySelector('#otherCustomers');
 let viewCustomers = document.querySelector('#viewCustomers');
 let mainHeaderNavbar = document.querySelector('.main-header-navbar');
-let mobileButton = document.querySelector('#mobileButton');
+let mobileButton = document.querySelectorAll('.mobileButton');
 
 let spinnerStop = () => {
     mainSpinner.style.display = 'flex';
@@ -40,8 +40,13 @@ inputDarkMode.onclick = function () {
     }
 };
 viewCustomers.onclick = function () {
-    otherCustomers.classList.toggle('active')
+    otherCustomers.classList.toggle('active');
 }
-mobileButton.onclick = function () {
-    mainHeaderNavbar.classList.toggle('active')
-}
+mobileButton.forEach(item => {
+    item.onclick = function () {
+        mainHeaderNavbar.classList.toggle('active');
+    }
+})
+window.onresize = function () {
+    if (window.innerWidth > 939) mainHeaderNavbar.classList.remove('active');
+};

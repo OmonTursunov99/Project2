@@ -91,6 +91,7 @@ main {
     opacity: 0;
     background-color: transparent;
     transition: $transition;
+    overflow: hidden;
     .content-container {
         position: relative;
         width: 100%;
@@ -144,10 +145,44 @@ main {
             z-index: -1;
         }
         .content {
-            width: 500px;
-            height: 600px;
+            transition: 500ms;
+            width: 90%;
+            height: 100%;
             z-index: 99999;
-            background-color: rebeccapurple;
+            padding: 15px;
+            opacity: 0;
+            .content-heading {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .content-link {
+                    @include tSpartanRegular24;
+                    text-decoration: none;
+                }
+                button {
+                
+                }
+            }
+            .content-actions {
+                display: flex;
+                flex-direction: column;
+                height: 80%;
+                padding: 40px 0;
+                nav {
+                    @include ulList;
+                    ul {
+                        li {
+                            margin-bottom: 16px;
+                            a {
+                                @include tSpartanRegular18;
+                            }
+                        }
+                    }
+                }
+                form {
+                    margin-top: auto;
+                }
+            }
         }
     }
     &.active {
@@ -171,7 +206,8 @@ main {
                 left: 0;
             }
             .content {
-            
+                opacity: 1;
+                transition-delay: 700ms;
             }
         }
     }
@@ -1218,6 +1254,39 @@ main {
                     color: $white !important;
                     &:hover {
                         color: $success !important;
+                    }
+                }
+            }
+        }
+    }
+    .main-header-navbar {
+        .content-container {
+            .banner-bottom,
+            .banner-right,
+            .banner-left,
+            .banner-top {
+                background-color: $dark;
+            }
+            .content-heading {
+                .content-link {
+                    color: $white;
+                }
+                button {
+                    svg path {
+                        fill: $white;
+                    }
+                }
+            }
+            .content-actions {
+                form {
+                    background: transparent !important;
+                    .btn-outline-success {
+                        border: 1px solid $white;
+                        color: $white;
+                        &:hover {
+                            border-color: transparent;
+                            background: $success;
+                        }
                     }
                 }
             }
