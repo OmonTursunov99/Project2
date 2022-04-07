@@ -7,6 +7,8 @@ let otherCustomers = document.querySelector('#otherCustomers');
 let viewCustomers = document.querySelector('#viewCustomers');
 let mainHeaderNavbar = document.querySelector('.main-header-navbar');
 let mobileButton = document.querySelectorAll('.mobileButton');
+let mainSliderItems = document.querySelectorAll('.main-slider-item');
+const SLIDER_CLASSES = [];
 
 let spinnerStop = () => {
     mainSpinner.style.display = 'flex';
@@ -50,6 +52,33 @@ mobileButton.forEach(item => {
 window.onresize = function () {
     if (window.innerWidth > 939) mainHeaderNavbar.classList.remove('active');
 };
+let checkSliderClasses = () => {
+    mainSliderItems.forEach(item => {
+        SLIDER_CLASSES.push(item.className);
+    })
+}
+let changeSlideClasses = () => {
+    let a = SLIDER_CLASSES.splice(0, 1);
+    SLIDER_CLASSES.push(a[0]);
+    console.log(SLIDER_CLASSES)
+}
+let sliderControllerNext = () => {
+    changeSlideClasses();
+    let slideItems = document.querySelectorAll('.main-slider-item');
+    slideItems.forEach((item, index) => {
+        let slideLength = mainSliderItems.length;
+        if(index === slideLength - 1) item.classList = SLIDER_CLASSES[0];
+        else item.classList = SLIDER_CLASSES[index + 1];
+    });
+}
+checkSliderClasses();
+let slideInterval = setInterval(() => {
+    sliderControllerNext();
+}, 2000);
+// clearInterval(slideInterval)
+let stopInterval = () => {
+    clearInterval(slideInterval)
+}
 
 
 
