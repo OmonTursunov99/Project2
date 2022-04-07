@@ -1605,14 +1605,14 @@ main .main-position-item {
 .dark-mode .future-investment-section .content-container .content-image svg circle {
   stroke: #ffffff !important;
 }
-.dark-mode .future-investment-section .content-container .content-text .content-dropdown-group .content-dropdown {
-  background-color: #313C42 !important;
+.dark-mode .future-investment-section .content-container .content-text .content-dropdown-group .dropdown {
+  background-color: #313C42;
 }
-.dark-mode .future-investment-section .content-container .content-text .content-dropdown-group .content-dropdown span {
-  color: #ffffff !important;
+.dark-mode .future-investment-section .content-container .content-text .content-dropdown-group .dropdown .content-dropdown {
+  background-color: #313C42;
 }
-.dark-mode .future-investment-section .content-container .content-text .content-dropdown-group .dropdown .dropdown-items .dropdown-item:hover {
-  background-color: rgba(38, 50, 56, 0.1);
+.dark-mode .future-investment-section .content-container .content-text .content-dropdown-group .dropdown .content-dropdown span {
+  color: #ffffff;
 }
 .dark-mode .why-choose-section .content-container .content-text .content-cards-group .content-card .content-card-number {
   background-color: #313C42 !important;

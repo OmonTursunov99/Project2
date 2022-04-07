@@ -1270,8 +1270,8 @@
     margin-bottom: 12px;
   }
 
-  .apps-section {
-    padding: 50px 0;
+  .apps-section .content {
+    padding: 50px 30px;
   }
   .apps-section .content h2 {
     font-size: 32px;

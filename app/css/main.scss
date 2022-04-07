@@ -1143,18 +1143,14 @@ main {
             }
             .content-text {
                 .content-dropdown-group {
-                    .content-dropdown {
-                        background-color: $smoke !important;
-                        span {
-                            color: $white !important;
-                        }
-                    }
+                    
                     .dropdown {
-                        .dropdown-items {
-                            .dropdown-item {
-                                &:hover {
-                                    background-color: $lightDark;
-                                }
+                        background-color: $smoke;
+    
+                        .content-dropdown {
+                            background-color: $smoke;
+                            span {
+                                color: $white;
                             }
                         }
                     }
